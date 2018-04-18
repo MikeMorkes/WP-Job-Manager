@@ -7,14 +7,14 @@ class WP_Test_WP_Job_Manager_Models_Job_Types_Custom_Fields extends WPJM_REST_Te
     /**
      * @group rest
      */
-    function test_exists() {
+    public function test_exists() {
         $this->assertClassExists( 'WP_Job_Manager_Models_Job_Types_Custom_Fields' );
     }
 
     /**
      * @group rest
      */
-    function test_can_set_employment_type() {
+    public function test_can_set_employment_type() {
         $model = $this
             ->environment()
             ->model( 'WP_Job_Manager_Models_Job_Types_Custom_Fields' )
